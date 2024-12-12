@@ -3,6 +3,7 @@ Filename: main.c
 Name: Christopher Myers
 Date: 12/10/2024
 Course: CPE 2600-121
+gcc -o main.out main.c dft.c -g -lm
 *******************************************************************************/
 
 #include <stdio.h>
@@ -78,9 +79,13 @@ void main(void) {
         }
 
         dft(row_n, width, row_k);
+
         for(int k = 0; k < width; k++)
-        {
-            row_k[k] = 0 + I*cimag(row_k[k]);
+        {   
+            if(k < width*20/100.0)
+            {
+                row_k[k] = 0;
+            }
         }
 
         idft(row_k, width, row_n);
