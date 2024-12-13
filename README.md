@@ -12,7 +12,7 @@ This program runs an images rows through a discrete fourier transform and then r
 The output file is `myFileOut.pgm`
 
 ### Original Image:
-![barbara](barbaraExample.png)
+![barbara](readme_images/barbaraExample.png)
 
 ### Output Image:
-![barbara_out](myFileOutExample.png)
+![barbara_out](readme_images/myFileOutExample.png)
