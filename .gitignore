@@ -2,3 +2,5 @@
 *.csv
 *.d
 *.o
+*Zone.Identifier
+myFileOut.pgm
